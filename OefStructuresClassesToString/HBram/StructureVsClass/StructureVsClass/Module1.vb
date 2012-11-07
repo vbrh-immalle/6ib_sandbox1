@@ -7,6 +7,7 @@
 
         Console.WriteLine(b1)
         Console.WriteLine(b2)
+
     End Sub
 
 End Module
