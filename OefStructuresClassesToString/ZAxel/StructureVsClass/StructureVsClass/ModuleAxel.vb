@@ -13,7 +13,7 @@
     ' Bericht: Waar ben je?
 End Structure
 
-Module Module1
+Module ModuleAxel
 
     Sub Main()
         ' Maak hier 2 nieuwe berichten aan en druk ze af met Console.WriteLine (en de ToString)-method
