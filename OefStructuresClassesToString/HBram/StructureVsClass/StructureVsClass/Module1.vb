@@ -1,22 +1,7 @@
-﻿Structure Bericht
-    Dim afzender As String
-    Dim bericht As String
-    Dim datum As DateTime
-
-    Public Overrides Function ToString() As String
-        Dim rtrnwrd As String
-
-        rtrnwrd = "afzender: " & afzender & vbCrLf & "bericht: " & bericht & vbCrLf & "datum: " & datum & vbCrLf
-
-        Return rtrnwrd
-    End Function
-
-End Structure
-
-Module Module1
+﻿Module Module1
 
     Sub Main()
-        Dim b1, b2 As Bericht
+        Dim b1, b2 As New Bericht
 
         b1.afzender = "Jan"
         b1.bericht = "Hallo!"
