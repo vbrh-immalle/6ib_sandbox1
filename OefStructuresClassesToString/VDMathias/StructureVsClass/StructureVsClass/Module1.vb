@@ -16,6 +16,10 @@ Module Module1
     Sub Main()
         Dim heeeej As Bericht
         Dim baas As Bericht
+        Dim bigmac As New Bericht
+
+        bigmac.afzender = "ronald"
+        bigmac.bericht = "msokfjoqisfjoqisjefmoqishejz"
 
         heeeej.afzender = "Q"
         heeeej.bericht = "heeeeeeeeeeeeeeeeeeejjjjjjj"
