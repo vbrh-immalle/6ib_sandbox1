@@ -9,19 +9,12 @@
         Console.WriteLine("Datum: " & datum)
         Return ""
     End Function
-    ' Override hier de ToString() method van object die afzender en bericht afprint
-    ' b.v. 
-    ' Afzender: Jos
-    ' Bericht: Waar ben je?
+
 End Structure
 
 Module ModuleAxel
 
     Sub Main()
-        ' Maak hier 2 nieuwe berichten aan en druk ze af met Console.WriteLine (en de ToString)-method
-        ' Denk eraan: structures zijn VALUE types!
-
-
 
 
         Dim b1 As Bericht
@@ -38,6 +31,20 @@ Module ModuleAxel
         b2.bericht = "Hello world."
         b2.datum = New DateTime(1995, 6, 22, 14, 48, 0)
         Console.WriteLine(b2)
+
+
+        Dim bje1 As New Berichtje
+        bje1.afzender = "Jas"
+        bje1.bericht = "Woor ben je?"
+        bje1.datum = Now()
+        Console.WriteLine(bje1)
+
+
+        Dim bje2 As New Berichtje
+        bje2.afzender = "Ik"
+        bje2.bericht = "Hello world."
+        bje2.datum = New DateTime(1995, 6, 22, 14, 48, 0)
+        Console.WriteLine(bje2)
     End Sub
 
 End Module
