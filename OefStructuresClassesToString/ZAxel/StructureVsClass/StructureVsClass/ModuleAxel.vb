@@ -1,10 +1,12 @@
 ﻿Structure Bericht
     Dim afzender As String
     Dim bericht As String
+    Dim datum As DateTime
 
     Public Overrides Function ToString() As String
         Console.WriteLine("Afzender: " & afzender)
         Console.WriteLine("Bericht: " & bericht)
+        Console.WriteLine("Datum: " & datum)
         Return ""
     End Function
     ' Override hier de ToString() method van object die afzender en bericht afprint
@@ -20,11 +22,13 @@ Module ModuleAxel
         ' Denk eraan: structures zijn VALUE types!
 
 
+
+
         Dim b1 As Bericht
 
         b1.afzender = "Jos"
         b1.bericht = "Waar ben je?"
-
+        b1.datum = Now()
         Console.WriteLine(b1)
 
 
@@ -32,7 +36,7 @@ Module ModuleAxel
 
         b2.afzender = "Ik"
         b2.bericht = "Hello world."
-
+        b2.datum = New DateTime(1995, 6, 22, 14, 48, 0)
         Console.WriteLine(b2)
     End Sub
 
