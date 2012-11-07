@@ -1,7 +1,7 @@
 ﻿Class Bericht
-    Public afzender As String
-    Public datum As DateTime
-    Public bericht As String
+    Property afzender As String
+    Property datum As DateTime
+    Property bericht As String
 
     Public Overrides Function ToString() As String
         Return "Afzender: " & afzender & vbCrLf & "Bericht: " & bericht & vbCrLf & "Datum + tijd: " & datum
