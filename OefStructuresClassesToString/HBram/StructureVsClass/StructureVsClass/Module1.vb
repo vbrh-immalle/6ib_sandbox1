@@ -10,7 +10,6 @@
         Return rtrnwrd
     End Function
 
-    ' Override hier de ToString() method van object die afzender en bericht afprint
 End Structure
 
 Module Module1
@@ -25,9 +24,6 @@ Module Module1
 
         Console.WriteLine(b1)
         Console.WriteLine(b2)
-        ' Maak hier 2 nieuwe berichten aan en druk ze af met Console.WriteLine (en de ToString)-method
-        ' Denk eraan: structures zijn VALUE types!
-
     End Sub
 
 End Module
