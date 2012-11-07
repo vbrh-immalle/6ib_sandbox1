@@ -1,14 +1,9 @@
 ﻿Module Module1
 
     Sub Main()
-        Dim b1, b2 As New Bericht
-
-        b1.afzender = "Jan"
-        b1.bericht = "Hallo!"
-        b1.datum = Now()
-        b2.afzender = "Bram"
-        b2.bericht = "Heey!"
-        b2.datum = New DateTime(1995, 2, 23, 10, 13, 0)
+        Dim datum As New DateTime(1955, 2, 23, 10, 13, 0)
+        Dim b1 As New Bericht("Bram", "Hallo", datum)
+        Dim b2 As New Bericht("Jan", "Hallo!", Now())
 
         Console.WriteLine(b1)
         Console.WriteLine(b2)
