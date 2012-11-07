@@ -16,6 +16,7 @@ Module Module1
     Sub Main()
         Dim bericht1 As Bericht
         Dim bericht2 As Bericht
+        Dim bericht3 As New Bericht2 'gebruik van een klasse
 
         bericht1.afzender = "Jos'"
         bericht1.bericht = "Waar ben je?"
@@ -25,8 +26,12 @@ Module Module1
         bericht2.bericht = "Hoe gaat het?"
         bericht2.datum = "1995/10/12"
 
+        bericht3.afzender = "Joeri'"
+        bericht3.bericht = "Ga je naar de winkel?"
+        bericht3.verj = "1905/10/12"
         Console.WriteLine(bericht1.ToString)
         Console.WriteLine(bericht2.ToString)
+        Console.WriteLine(bericht3.ToString)
         ' Maak hier 2 nieuwe berichten aan en druk ze af met Console.WriteLine (en de ToString)-method
         ' Denk eraan: structures zijn VALUE types!
     End Sub
