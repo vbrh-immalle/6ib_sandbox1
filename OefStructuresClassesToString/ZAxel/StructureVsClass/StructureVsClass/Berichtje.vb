@@ -1,7 +1,7 @@
 ﻿Public Class Berichtje
-    Public afzender As String
-    Public bericht As String
-    Public datum As DateTime
+    Property afzender As String
+    Property bericht As String
+    Property datum As DateTime
 
     Public Overrides Function ToString() As String
         Console.WriteLine("Afzender: " & afzender)
