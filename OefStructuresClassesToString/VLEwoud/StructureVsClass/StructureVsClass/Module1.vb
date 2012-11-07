@@ -1,9 +1,9 @@
 ﻿Structure Bericht
     Dim afzender As String
     Dim bericht As String
-    Dim verj As DateTime
+    Dim datum As DateTime
     Public Overrides Function ToString() As String
-        Return afzender & bericht & verj
+        Return afzender & bericht & datum
     End Function
     ' Override hier de ToString() method van object die afzender en bericht afprint
     ' b.v. 
@@ -19,11 +19,11 @@ Module Module1
 
         bericht1.afzender = "Jos'"
         bericht1.bericht = "Waar ben je?"
-        bericht1.verj = "2012/12/12"
+        bericht1.datum = "2012/12/12"
 
         bericht2.afzender = "Jan'"
         bericht2.bericht = "Hoe gaat het?"
-        bericht2.verj = "1995/10/12"
+        bericht2.datum = "1995/10/12"
 
         Console.WriteLine(bericht1.ToString)
         Console.WriteLine(bericht2.ToString)
