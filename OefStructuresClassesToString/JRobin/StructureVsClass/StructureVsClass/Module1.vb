@@ -1,24 +1,32 @@
 ﻿Structure Bericht
     Dim afzender As String
+    Dim datum As DateTime
     Dim bericht As String
 
     Public Overrides Function ToString() As String
-        Return "Afzender:"
+        Return "Afzender: " & afzender & vbCrLf & "Bericht: " & bericht & vbCrLf & "Datum + tijd: " & datum
     End Function
-    ' Override hier de ToString() method van object die afzender en bericht afprint
-    ' b.v. 
-    ' Afzender: Jos
-    ' Bericht: Waar ben je?
 End Structure
 
 Module Module1
 
     Sub Main()
-        ' Maak hier 2 nieuwe berichten aan en druk ze af met Console.WriteLine (en de ToString)-method
-        ' Denk eraan: structures zijn VALUE types!
-        Dim woord As String
-        woord = "Hallo"
-        Console.WriteLine(woord.ToString())
+
+        Dim bericht1, bericht2 As Bericht
+        Dim geboortedatum As New DateTime
+
+        geboortedatum = Date.Parse("4 december")
+
+        bericht1.bericht = "Hallo"
+        bericht1.afzender = "Jan"
+        bericht1.datum = geboortedatum
+        bericht2.bericht = "lol"
+        bericht2.afzender = "Jef"
+        bericht2.datum = Date.Now
+
+        Console.WriteLine(bericht1)
+        Console.WriteLine(bericht2)
+
     End Sub
 
 End Module
